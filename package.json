@@ -5,7 +5,7 @@
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
-    "start": "ionic-app-scripts serve --sass ./config/sass.config.js",
+    "start": "APP_ENV=prod ionic-app-scripts serve --sass ./config/sass.config.js --copy ./config/copy.config.js --webpack ./config/webpack.config.js",
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build --sass ./config/sass.config.js",
     "lint": "ionic-app-scripts lint"
@@ -31,7 +31,10 @@
     "zone.js": "0.8.29"
   },
   "config": {
-    "ionic_sass": "./config/sass.config.js"
+    "ionic_sass": "./config/sass.config.js",
+    "ionic_copy": "./config/copy.config.js",
+    "ionic_uglifyjs": "./config/uglifyjs.config.js",
+    "ionic_webpack": "./config/webpack.config.js"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.1",

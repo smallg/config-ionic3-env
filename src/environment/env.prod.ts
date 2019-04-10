@@ -1,0 +1,1 @@
+export const env_api = 'http://www.prod.com/api';
